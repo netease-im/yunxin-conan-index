@@ -1,0 +1,8 @@
+sources:
+  "1.1.0":
+    Windows:
+      url: "https://yx-web-nosdn.netease.im/package/1689674503776/meeting-alog-win32-x86_64-1.1.0.tar.gz"
+      sha256: "7595bd0ef6de8ccbc09e65a3ebf523108c6e5e0fd25a42852008aa5a225c8181"
+    Macos:
+      url: "https://yx-web-nosdn.netease.im/package/meeting-alog-darwin-universal-1.1.0.tar.gz"
+      sha256: "74bccdc0b33878710667c517967197f89a387c4ed44b8701d1beec1a19d94578"
