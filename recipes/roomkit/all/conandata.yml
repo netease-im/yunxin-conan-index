@@ -1,8 +1,8 @@
 sources:
   "1.16.1":
     Windows:
-      url: "http://10.219.25.127:88/App-RoomKit/Desktop/release/1.16.1/win32-x64/roomkit-win32-x64-release-1-16-1-151-build-2007877.tar.gz"
-      sha256: "c4b299c8b01f69fb5d1304e9fb0303dcf0fd18bacfff5d768f2fe6cd8466b5dd"
+      url: "https://yx-web-nosdn.netease.im/package/1689662253560/roomkit-win32-x64-1-16-1-154-build-2008286.tar.gz"
+      sha256: "761c828c5e43bf09931d1fb24f2791e6d7042057c1f36bb8f46101a9066fbc88"
     Macos:
-      url: "http://10.219.25.127:88/App-RoomKit/Desktop/release/1.16.1/darwin-universal/roomkit-darwin-universal-release-1-16-1-151-build-2007877.tar.gz"
-      sha256: "c44338c7eba744d301cf0c240e8a0b409f72b2f2297a4c1a1805fd1dbc420adb"
+      url: "https://yx-web-nosdn.netease.im/package/1689662279999/roomkit-darwin-universal-1-16-1-154-build-2008286.tar.gz"
+      sha256: "7a4ce5309d4703222507f38b2effd8d9188e6b7a402b086168a1ae109ba8b97a"

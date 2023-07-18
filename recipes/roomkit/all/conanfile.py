@@ -59,6 +59,7 @@ class NetEaseIMConan(ConanFile):
             copy(self, "*.lib", dst=dst_lib_folder, src=src_lib_folder)
         if self.settings.os == "Macos":
             copy(self, "*.dylib", dst=dst_lib_folder, src=src_lib_folder)
+            copy(self, "*.framework/*", dst=dst_lib_folder, src=src_lib_folder)
         copy(self, "*.h", dst=dst_include_folder, src=src_include_folder)
 
     def package_info(self):
