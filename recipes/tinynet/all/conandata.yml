@@ -1,0 +1,4 @@
+sources:
+  "0.1.1":
+    url: "https://github.com/netease-im/tinyNET/archive/refs/tags/0.1.1.tar.gz"
+    sha256: "05e34cf60a74f4139965913610be8e4eccd0d6f721e734d3f1e785ce113973ec"
