@@ -54,6 +54,8 @@ class NetEaseIMConan(ConanFile):
         dst_bin_folder = os.path.join(self.package_folder, "bin")
         src_include_folder = os.path.join(self.build_folder, "include")
         dst_include_folder = os.path.join(self.package_folder, "include")
+        src_res_folder = os.path.join(self.build_folder, "resource")
+        dst_res_folder = os.path.join(self.package_folder, "resource")
         if self.settings.os == "Windows":
             copy(self, "*.dll", dst=dst_bin_folder, src=src_bin_folder)
             copy(self, "*.lib", dst=dst_lib_folder, src=src_lib_folder)
@@ -61,6 +63,7 @@ class NetEaseIMConan(ConanFile):
             copy(self, "*.dylib", dst=dst_lib_folder, src=src_lib_folder)
             copy(self, "*.framework/*", dst=dst_lib_folder, src=src_lib_folder)
         copy(self, "*.h", dst=dst_include_folder, src=src_include_folder)
+        copy(self, "*", dst=dst_res_folder, src=src_res_folder)
 
     def package_info(self):
         self.cpp_info.libdirs = ["lib"]
