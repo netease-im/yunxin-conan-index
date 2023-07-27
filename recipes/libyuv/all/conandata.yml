@@ -1,0 +1,10 @@
+# Versions from LIBYUV_VERSION definition in include/libyuv/version.h
+# Pay attention to package commits incrementing this definition
+sources:
+  "1854":
+    url: "https://yx-web-nosdn.netease.im/package/1690434910051/libyuv-yunxin-3abd6f36b6e4f5a2e0ce236580a8bc1da3c7cf7e.tar.gz"
+patches:
+  "1854":
+    - patch_file: "patches/1854-0001-fix-cmake.patch"
+      patch_description: "Fix CMake to be more robust & predictable"
+      patch_type: "conan"
