@@ -26,26 +26,26 @@ sources:
         sha256: "ab81e9219ffa8a93f75655e8215817923c166123ae3ff1f93610abac5d50f123"
   "9.12.1":
     All:
-      url: "https://yx-web-nosdn.netease.im/package/nim-win32-ia32-9-12-1-1072-build-2013274.tar.gz"
-      sha256: "82f4350f8b4a615c9cc9e55be4372cde76db23fc1ef221c58dbe76fa9cdc188d"
+      url: "https://yx-web-nosdn.netease.im/pacakge/nim-win32-ia32-9-12-1-1095-build-2025717.tar.gz"
+      sha256: "ec602d805b1da5d7ff1d9b46865059ee2cb7385aa7107c77516492963859fc01"
     Windows:
       x86:
-        url: "https://yx-web-nosdn.netease.im/package/nim-win32-ia32-9-12-1-1072-build-2013274.tar.gz"
-        sha256: "82f4350f8b4a615c9cc9e55be4372cde76db23fc1ef221c58dbe76fa9cdc188d"
+        url: "https://yx-web-nosdn.netease.im/pacakge/nim-win32-ia32-9-12-1-1095-build-2025717.tar.gz"
+        sha256: "ec602d805b1da5d7ff1d9b46865059ee2cb7385aa7107c77516492963859fc01"
       x86_64:
-        url: "https://yx-web-nosdn.netease.im/package/nim-win32-x64-9-12-1-1072-build-2013274.tar.gz"
-        sha256: "514e28cead07cdeaa46a637c01c55b50e19b4a45e0f1063fcf18196a962742b6"
+        url: "https://yx-web-nosdn.netease.im/pacakge/nim-win32-x64-9-12-1-1095-build-2025717.tar.gz"
+        sha256: "b4da8f6fd420466d5314436f2cb1834d1dceb8e9ab8e1b76b55b7811adfa0b98"
     Linux:
       x86_64:
-        url: "https://yx-web-nosdn.netease.im/package/nim-linux-x64-9-12-1-1072-build-2013274.tar.gz"
-        sha256: "f3a3f93937b3791b6e73d173672ec615387a295422814a8a408ea939185e293f"
+        url: "https://yx-web-nosdn.netease.im/pacakge/nim-linux-x64-9-12-1-1095-build-2025717.tar.gz"
+        sha256: "dd09c741f73426623a8652f506b3f3064959bdbe9ee14c2b7e7114405c7942f1"
       armv8:
-        url: "https://yx-web-nosdn.netease.im/package/nim-linux-arm64-9-12-1-1072-build-2013274.tar.gz"
-        sha256: "4a1f9b877a809fc4b31eca359dbce73fac12e38b871ac05e0d1f5edfa6af4ac4"
+        url: "https://yx-web-nosdn.netease.im/pacakge/nim-linux-arm64-9-12-1-1095-build-2025717.tar.gz"
+        sha256: "f2ee9ae65b598d7a130fbe5f4a6d63f07293877140f7c6c0823ee2a6e67d45f2"
     Macos:
       x86_64:
-        url: "https://yx-web-nosdn.netease.im/package/nim-darwin-x64-9-12-1-1072-build-2013274.tar.gz"
-        sha256: "0947ed5869a9b95e9b97aab549d7000a7d59d807d9578665b73ea39a84fb6042"
+        url: "https://yx-web-nosdn.netease.im/pacakge/nim-darwin-x64-9-12-1-1095-build-2025717.tar.gz"
+        sha256: "3b435a33f4f658f02e81d7f9eb2973d0ef1d2663e3c3ef70fb7f0d13bdd430a6"
       armv8:
-        url: "https://yx-web-nosdn.netease.im/package/nim-darwin-arm64-9-12-1-1072-build-2013274.tar.gz"
-        sha256: "1f10097c711f07771f5774c0739528dbfaa03e01c0720dfd76012ec18be6a9ee"
+        url: "https://yx-web-nosdn.netease.im/pacakge/nim-darwin-arm64-9-12-1-1095-build-2025717.tar.gz"
+        sha256: "e011f62f8864a71b5e7e6bf8027ff1f51dcc89b1500afbb8a174e73625368ff8"
