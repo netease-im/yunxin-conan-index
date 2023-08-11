@@ -57,10 +57,39 @@ class NetEaseIMConan(ConanFile):
         src_res_folder = os.path.join(self.build_folder, "resource")
         dst_res_folder = os.path.join(self.package_folder, "resource")
         if self.settings.os == "Windows":
-            copy(self, "*.dll", dst=dst_bin_folder, src=src_bin_folder)
-            copy(self, "*.lib", dst=dst_lib_folder, src=src_lib_folder)
+            copy(self, "necrashpad_handler.exe", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "h_available.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "necrashpad.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "nertc_sdk.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "NERtcAiDenoise.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "NERtcAiHowling.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "NERtcAudio3D.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "NERtcBeauty.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "NERtcFaceDetect.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "NERtcFaceEnhance.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "NERtcnn.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "NERtcPersonSegment.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "NERtcScreenShareEnhance.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "NERtcSuperResolution.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "NERtcVideoDenoise.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "nim_chatroom.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "nim.dll", dst=dst_bin_folder, src=src_bin_folder)
+            copy(self, "protoopp.dll", dst=dst_bin_folder, src=src_bin_folder)
+            if self.settings.build_type == "Debug":
+                copy(self, "roomkitd.dll", dst=dst_bin_folder, src=src_bin_folder)
+                copy(self, "roomkitd.lib", dst=dst_lib_folder, src=src_lib_folder)
+            else:
+                copy(self, "roomkit.dll", dst=dst_bin_folder, src=src_bin_folder)
+                copy(self, "roomkit.lib", dst=dst_lib_folder, src=src_lib_folder)
+
         if self.settings.os == "Macos":
-            copy(self, "*.dylib", dst=dst_lib_folder, src=src_lib_folder)
+            copy(self, "libh_available.dylib", dst=dst_lib_folder, src=src_lib_folder)
+            copy(self, "libnim_chatroom.dylib", dst=dst_lib_folder, src=src_lib_folder)
+            copy(self, "libnim.dylib", dst=dst_lib_folder, src=src_lib_folder)
+            if self.settings.build_type == "Debug":
+                copy(self, "libroomkitd.dylib", dst=dst_lib_folder, src=src_lib_folder)
+            else:
+                copy(self, "libroomkit.dylib", dst=dst_lib_folder, src=src_lib_folder)
             copy(self, "*.framework/*", dst=dst_lib_folder, src=src_lib_folder)
         copy(self, "*.h", dst=dst_include_folder, src=src_include_folder)
         copy(self, "*", dst=dst_res_folder, src=src_res_folder)
