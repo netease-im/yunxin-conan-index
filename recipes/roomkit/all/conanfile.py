@@ -98,6 +98,6 @@ class NetEaseIMConan(ConanFile):
         self.cpp_info.libdirs = ["lib"]
         self.cpp_info.includedirs = ["include", "include/nertc"]
         library_postfix = ""
-        if self.settings.os == "Windows" and self.settings.build_type == "Debug":
+        if self.settings.build_type == "Debug":
             library_postfix = "d"
         self.cpp_info.libs.append("roomkit{}".format(library_postfix))
