@@ -34,3 +34,10 @@ sources:
     Macos:
       url: "https://yx-web-nosdn.netease.im/package/roomkit-darwin-universal-1-19-3-260-build-2087513.tar.gz"
       sha256: "bada8ada12aaf36317f0a3fdbf6d58000cb508b05dfdd3370a5262a58f5a7202"
+  "1.20.0":
+    Windows:
+      url: "https://yx-web-nosdn.netease.im/package/roomkit-win32-x64-1-20-0-269-build-2099680.tar.gz"
+      sha256: "455c78affc2c347b642f5d9de017c8ef7fedc51d2d0be13a012063bcadd7370a"
+    Macos:
+      url: "https://yx-web-nosdn.netease.im/package/roomkit-darwin-universal-1-20-0-269-build-2099680.tar.gz"
+      sha256: "dbfdef6ee409dd6368a9da135b34602baccd01ef60962917d1270119469b7768"
