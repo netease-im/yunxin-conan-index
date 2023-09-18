@@ -5,8 +5,8 @@ project(test_package)
 include("${CMAKE_BINARY_DIR}/conanbuildinfo.cmake")
 conan_basic_setup(TARGETS)
 
-find_package(tinyNET REQUIRED)
+find_package(tinynet REQUIRED)
 
 add_executable(${PROJECT_NAME} ../test_package/test_package.cc)
 
-target_link_libraries(${PROJECT_NAME} tinyNET::tinyNET)
+target_link_libraries(${PROJECT_NAME} tinynet::tinynet)

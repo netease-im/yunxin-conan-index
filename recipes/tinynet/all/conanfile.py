@@ -7,7 +7,7 @@ import os
 
 
 class TinyNETConan(ConanFile):
-    name = "tinyNET"
+    name = "tinynet"
     description = "Tiny NET forked from doubango"
     license = "GNU Public License or the Artistic License"
     homepage = "https://github.com/DoubangoTelecom/doubango"
@@ -26,7 +26,7 @@ class TinyNETConan(ConanFile):
     short_paths = True
 
     def requirements(self):
-        self.requires("tinySAK/0.1.0@yunxin/stable")
+        self.requires("tinysak/0.1.1@yunxin/stable")
 
     def config_options(self):
         if self.settings.os == "Windows":

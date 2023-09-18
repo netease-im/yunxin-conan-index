@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.10)
 
 project(test_package)
 
-find_package(tinySAK REQUIRED CONFIG)
+find_package(tinysak REQUIRED CONFIG)
 
 add_executable(${PROJECT_NAME} test_package.cc)
 
-target_link_libraries(${PROJECT_NAME} tinySAK::tinySAK)
+target_link_libraries(${PROJECT_NAME} tinysak::tinysak)

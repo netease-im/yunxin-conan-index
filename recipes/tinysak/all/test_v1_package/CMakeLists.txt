@@ -5,8 +5,8 @@ project(test_package)
 include("${CMAKE_BINARY_DIR}/conanbuildinfo.cmake")
 conan_basic_setup(TARGETS)
 
-find_package(tinySAK REQUIRED)
+find_package(tinysak REQUIRED)
 
 add_executable(${PROJECT_NAME} ../test_package/test_package.cc)
 
-target_link_libraries(${PROJECT_NAME} tinySAK::tinySAK)
+target_link_libraries(${PROJECT_NAME} tinysak::tinysak)

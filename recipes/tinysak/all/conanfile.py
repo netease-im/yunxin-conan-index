@@ -7,13 +7,14 @@ import os
 
 
 class TinySAKConan(ConanFile):
-    name = "tinySAK"
+    name = "tinysak"
     description = "Tiny SAK forked from doubango"
     license = "GNU Public License or the Artistic License"
     homepage = "https://github.com/DoubangoTelecom/doubango"
     url = "https://github.com/conan-io/conan-center-index"
     topics = ("im", "nim", "nertc", "netease im", "netease")
     settings = "os", "arch", "compiler", "build_type"
+    generators = "CMakeDeps"
     options = {
         "shared": [True, False],
         "fPIC": [True, False]
