@@ -51,9 +51,6 @@ class NetEaseIMConan(ConanFile):
     def layout(self):
         cmake_layout(self, src_folder="src")
 
-    def source(self):
-        get(self, **self.conan_data["sources"][self.version]["All"])
-
     def generate(self):
         tc = CMakeToolchain(self)
         tc.variables["CMAKE_BUILD_TYPE"] = "Release" if self.settings.build_type == "Release" else "Debug"
@@ -64,7 +61,7 @@ class NetEaseIMConan(ConanFile):
         get(self, **self.conan_data["sources"][self.version]
             [str(self.settings.os)][str(self.settings.arch)])
         cmake = CMake(self)
-        cmake.configure(build_script_folder="wrapper")
+        cmake.configure(build_script_folder=os.path.join(self.build_folder, "wrapper"))
         cmake.build(target="install")
 
     def package(self):
