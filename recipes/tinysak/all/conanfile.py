@@ -57,7 +57,7 @@ class TinySAKConan(ConanFile):
         dst_include_folder = os.path.join(self.package_folder, "include")
         if self.settings.os == "Windows":
             copy(self, "*.lib", dst=dst_lib_folder, src=src_lib_folder, keep_path=False)
-        if self.settings.os in ["Linux", "Macos"]:
+        else:
             copy(self, "*.a", dst=dst_lib_folder, src=src_lib_folder, keep_path=False)
         copy(self, "*.h", dst=dst_include_folder, src=src_include_folder)
 
