@@ -1,0 +1,8 @@
+sources:
+  "1.0.18":
+    Windows:
+      url: "https://yx-web-nosdn.netease.im/package/1701831495245/Marvel_win32_1.0.18.tar.gz"
+      sha256: "480a18071113f6dc7302ec067ad5c243dcd38d5cc5dcc00dba5a9c9d3625e82d"
+    Macos:
+      url: "https://yx-web-nosdn.netease.im/package/1701398805801/Marvel_darwin_1.0.18.tar.gz"
+      sha256: "5b0fb378ef69cf614e8a637cd03a19eed12bd1855a4aea8eb1011bb428b9e85f"
