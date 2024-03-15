@@ -35,7 +35,7 @@ class NetEaseIMConan(ConanFile):
     def validate(self):
         if self.settings.compiler.get_safe("cppstd"):
             check_min_cppstd(self, 11)
-        if self.settings.os not in ["Windows", "Macos"]:
+        if self.settings.os not in ["Windows", "Macos", "Linux"]:
             raise ConanInvalidConfiguration(
                 f"{self.ref} unsupported platform."
             )
