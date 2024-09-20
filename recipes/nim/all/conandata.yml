@@ -153,7 +153,7 @@ sources:
       armv8:
         url: "https://yx-web-nosdn.netease.im/package/1709290580656/nim-darwin-arm64-9-15-1-1802-build-2372551.tar.gz"
         sha256: "4a51dd1ec5cd2cedeb18eeb6ed69965937ea9a7ebd5445dd1ad2aa4513147341"
-  "9.15.1":
+  "9.18.0":
     Windows:
       x86:
         url: "https://yx-web-nosdn.netease.im/package/1725507233809/nim-win32-ia32-9-18-0-3160-build-2683978.tar.gz"
@@ -175,3 +175,25 @@ sources:
       armv8:
         url: "https://yx-web-nosdn.netease.im/package/1725507225559/nim-darwin-arm64-9-18-0-3160-build-2683978.tar.gz"
         sha256: "728fe7993148f25655441737de54ce60398704441c25dda9083cb69ed31db40f"
+  "10.5.0":
+    Windows:
+      x86:
+        url: "https://yx-web-nosdn.netease.im/package/1725941048477/nim-win32-ia32-release-10-5-0-3214-build-2690765.tar.gz"
+        sha256: "9e6311944871644aea357563c46db8b7b830af8767616855737b61bcb68bcdae"
+      x86_64:
+        url: "https://yx-web-nosdn.netease.im/package/1725941066622/nim-win32-x64-release-10-5-0-3214-build-2690765.tar.gz"
+        sha256: "eb4a7cada9b861e26f923c81639648f4b4f17ed31c763e9b0b6ddf32a4c1b7a0"
+    Linux:
+      x86_64:
+        url: "https://yx-web-nosdn.netease.im/package/1725941087348/nim-linux-x64-release-10-5-0-3214-build-2690765.tar.gz"
+        sha256: "e32370b8cd285409fa36ccd80d46c980febb89917a4d170918e713f09082a902"
+      armv8:
+        url: "https://yx-web-nosdn.netease.im/package/1725941109934/nim-linux-arm64-release-10-5-0-3214-build-2690765.tar.gz"
+        sha256: "bd068b4bb3dd033b7fb1b95cc27b3b56052d73912af556c00440af68a40204e5"
+    Macos:
+      x86_64:
+        url: "https://yx-web-nosdn.netease.im/package/1725941006444/nim-darwin-x64-release-10-5-0-3214-build-2690765.tar.gz"
+        sha256: "0ebe81705494768440af7f57a477916175c72bcb27b3175c44d0ab0933dbee1b"
+      armv8:
+        url: "https://yx-web-nosdn.netease.im/package/1725941027165/nim-darwin-arm64-release-10-5-0-3214-build-2690765.tar.gz"
+        sha256: "d1be04133ecaf71fd37c777432234fc0e41a81b7d1dca7d61609ea49d6f9e82b"
