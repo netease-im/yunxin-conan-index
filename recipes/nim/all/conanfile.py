@@ -124,6 +124,9 @@ class NetEaseIMConan(ConanFile):
         if self.options.with_qchat:
             self.cpp_info.libs.append(
                 "nim_qchat_cpp_wrapper{}".format(library_postfix))
+        if self.options.with_http_tools:
+            self.cpp_info.libs.append(
+                "nim_tools_cpp_wrapper{}".format(library_postfix))
 
         if self.settings.os == "Macos":
             self.cpp_info.frameworks.append("AppKit")
