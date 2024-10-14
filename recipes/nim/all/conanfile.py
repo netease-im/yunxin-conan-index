@@ -21,6 +21,7 @@ class NetEaseIMConan(ConanFile):
         "with_chatroom": [True, False],
         "with_qchat": [True, False],
         "with_http_tools": [True, False],
+        "with_nertc": [True, False],
     }
     default_options = {
         "shared": False,
@@ -29,6 +30,7 @@ class NetEaseIMConan(ConanFile):
         "with_chatroom": True,
         "with_qchat": True,
         "with_http_tools": True,
+        "with_nertc": False,
     }
     short_paths = True
 
@@ -81,8 +83,13 @@ class NetEaseIMConan(ConanFile):
             if self.options.with_qchat:
                 copy(self, "nim_qchat.dll", dst=dst_bin_folder, src=src_bin_folder)
             if self.options.with_http_tools:
-                copy(self, "nim_http_tools.dll",
+                copy(self, "nim_tools_http.dll",
                      dst=dst_bin_folder, src=src_bin_folder)
+            if self.options.with_nertc:
+                copy(self, "nrtc.dll", dst=dst_bin_folder, src=src_bin_folder)
+                copy(self, "nrtc_audio_process.dll", dst=dst_bin_folder, src=src_bin_folder)
+                copy(self, "nim_audio_hook.dll", dst=dst_bin_folder, src=src_bin_folder)
+                copy(self, "nim_audio.dll", dst=dst_bin_folder, src=src_bin_folder)
         if self.settings.os == "Linux":
             copy(self, "*.*", dst=dst_lib_folder, src=src_lib_folder)
         if self.settings.os == "Macos":
@@ -96,7 +103,7 @@ class NetEaseIMConan(ConanFile):
                 copy(self, "libnim_qchat.dylib",
                      dst=dst_lib_folder, src=src_lib_folder)
             if self.options.with_http_tools:
-                copy(self, "libnim_http_tools.dylib",
+                copy(self, "libnim_tools_http.dylib",
                      dst=dst_lib_folder, src=src_lib_folder)
         if self.settings.os == "Windows":
             copy(self, "*.lib", dst=dst_lib_folder, src=src_lib_folder)
