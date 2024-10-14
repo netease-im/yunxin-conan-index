@@ -21,7 +21,7 @@ class NetEaseIMConan(ConanFile):
         "with_chatroom": [True, False],
         "with_qchat": [True, False],
         "with_http_tools": [True, False],
-        "with_nertc": [True, False],
+        "with_nrtc": [True, False],
     }
     default_options = {
         "shared": False,
@@ -30,7 +30,7 @@ class NetEaseIMConan(ConanFile):
         "with_chatroom": True,
         "with_qchat": True,
         "with_http_tools": True,
-        "with_nertc": False,
+        "with_nrtc": False,
     }
     short_paths = True
 
@@ -85,7 +85,7 @@ class NetEaseIMConan(ConanFile):
             if self.options.with_http_tools:
                 copy(self, "nim_tools_http.dll",
                      dst=dst_bin_folder, src=src_bin_folder)
-            if self.options.with_nertc:
+            if self.options.with_nrtc:
                 copy(self, "nrtc.dll", dst=dst_bin_folder, src=src_bin_folder)
                 copy(self, "nrtc_audio_process.dll", dst=dst_bin_folder, src=src_bin_folder)
                 copy(self, "nim_audio_hook.dll", dst=dst_bin_folder, src=src_bin_folder)
