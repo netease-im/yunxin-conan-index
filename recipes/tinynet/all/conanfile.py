@@ -1,7 +1,7 @@
 from conan import ConanFile
 from conan.errors import ConanInvalidConfiguration
 from conan.tools.cmake import CMake, CMakeToolchain, cmake_layout
-from conan.tools.files import get, copy, collect_libs
+from conan.tools.files import get, copy, collect_libs, apply_conandata_patches, export_conandata_patches
 from conan.tools.build import check_min_cppstd
 import os
 
@@ -27,6 +27,10 @@ class TinyNETConan(ConanFile):
 
     def requirements(self):
         self.requires("tinysak/0.1.1@yunxin/stable")
+        self.requires("openssl/1.1.1w")
+
+    def export_sources(self):
+        export_conandata_patches(self)
 
     def config_options(self):
         if self.settings.os == "Windows":
@@ -49,6 +53,7 @@ class TinyNETConan(ConanFile):
         tc.generate()
 
     def build(self):
+        apply_conandata_patches(self)
         cmake = CMake(self)
         cmake.configure()
         cmake.build()
