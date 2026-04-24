@@ -17,6 +17,9 @@ sources:
   "0.1.7":
     url: "https://github.com/netease-im/tinyNET/archive/refs/tags/0.1.4.tar.gz"
     sha256: "7540040ac631d47305a14481b70b209f94baa039d9746eaa32c1dc1043af018b"
+  "0.2.0":
+    url: "https://github.com/netease-im/tinyNET/archive/refs/tags/0.2.0.tar.gz"
+    sha256: "2e20ff2de56f7cf48e0be130156ae773df807608d608c6d3ba8f2626e0e3da62"
 patches:
   "0.1.4":
     - patch_file: "patches/0001-fix-crash-after-post-remove-socket-event.patch"
